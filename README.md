@@ -23,8 +23,8 @@ Cross-platform desktop app: **Windows**, **macOS**, and **Linux**.
 ## Install & run
 
 ```sh
-git clone <this-repo>
-cd biolink-master
+git clone git@github.com:hurxan/biolink-v2.git
+cd biolink-v2
 pip install -r requirements.txt
 python -m biolink
 ```
