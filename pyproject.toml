@@ -1,0 +1,23 @@
+[project]
+name = "biolink"
+version = "2.0.0"
+description = "Synchronized psycho-physiological and behavioural data acquisition (BioLink)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "LGPL-3.0-or-later" }
+dependencies = [
+  "PySide6>=6.5",
+  "numpy>=1.24",
+  "matplotlib>=3.7",
+  "pyserial>=3.5",
+]
+
+[project.scripts]
+biolink = "biolink.main:run"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["biolink*"]
